@@ -1,0 +1,191 @@
+body{
+    background-color: #f6f8ee;
+    font-family: sans-serif;
+    margin:0;
+    box-sizing: border-box;
+    
+}
+
+.encabezado{
+    position: fixed;
+    background-color: #95aa61;
+    color:white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    padding: 10px;
+    z-index: 1000;
+}
+
+aside{
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    background-color: #d6e68a;
+    top: 110px;
+    left: 0;
+    width: 15%;
+    padding: 20px;
+    bottom: 5px;
+}
+
+figcaption{
+    font-size: 14px;
+}
+
+footer{
+    position: fixed;
+    background-color: black;
+    text-align: center;
+    color: white;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+}
+
+section{
+    position: fixed;
+    background-color: #f6f8ee;
+    overflow-y: scroll;
+    top: 110px;
+    left: 18%;
+    right: 20%;
+    bottom: 20px;
+    width: 82%;
+    padding: 10px;
+}
+
+.navegacion{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+
+.nav-link{
+    color: white;
+    text-decoration: none;
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 90px;
+}
+
+.nav-menu{
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav-menu-item{
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 65px;
+}
+
+.nav-menu-link{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;    
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.nav-menu-link:hover{
+    transition: 0.5s;
+    background-color: #899752;
+    font-size: 22px;
+}
+
+img.izquierda{
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 25px;
+}
+
+h3{
+    clear: both;
+}
+
+.division{
+    clear:both;
+}
+
+.contenido{
+    padding-top: 140px;
+    padding-left: 20px; 
+    padding-right: 20px; 
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre las imágenes */
+    padding: 20px;
+    justify-content: center;
+}
+
+/* Estilo para cada elemento de la galería */
+.galeria-item {
+    width: 300px; /* Ancho fijo */
+    height: 400px; /* Altura fija */
+    text-align: center;
+    overflow: hidden; /* Ocultar cualquier desbordamiento */
+    position: relative; /* Para posicionar el título */
+}
+
+/* Estilo para las imágenes */
+.galeria-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px; /* Bordes redondeados para las imágenes */
+    margin-bottom: 8px;
+}
+
+/* Estilo para los títulos debajo de las imágenes */
+.descripcion {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    .galeria-item {
+        flex: 1 1 calc(50% - 20px); /* Dos columnas para pantallas medianas */
+        max-width: calc(50% - 20px);
+    }
+}
+
+.titulo-centrado{
+    text-align: center;
+}
+
+.subtitulo{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.texto{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.mapa{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.descripcion-mapa {
+    max-width: 400px;
+}
